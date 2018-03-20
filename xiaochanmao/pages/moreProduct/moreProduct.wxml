@@ -1,0 +1,18 @@
+<view class="product4">
+                <view class="title">
+                    <text class="enjoy">秒杀</text>
+                    <text class="zhi">商品</text>
+                </view>
+</view>
+           <scroll-view scroll-y="true" class="container" bindscrolltolower="lower">
+  <view wx:for="{{arr_all}}" wx:key="item" class="precentF">
+    <template is="showItem" data="{{item}}"/>
+  </view>
+</scroll-view>
+  <view class="more" wx:if="{{showMore}}">
+                     <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_logo2.ico" class="iconMore"></image>
+                     <text>没有更多了</text>
+                  </view>
+
+<import src="../template/template.wxml"/>
+

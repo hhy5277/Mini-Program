@@ -1,0 +1,30 @@
+{
+  "status": 1,
+  "showArticle": [
+    {
+      "title": "洗衣机买滚筒还是波轮的洗得更干净？原来由你洗的衣物决定",
+      "fTitle": "滚筒洗衣机和波轮洗衣机选哪一个成了新房装修的纠结问题？下面来看看究竟选哪个才能解决我们这纠结问题？",
+      "imgIcon": "../../assets/imgs/index/titleD.png",
+      "name": "小怪兽",
+      "num": "480",
+      "rImg": "../../assets/imgs/index/ping_000005.png"
+    },
+    {
+      "title": "滋润嫩肤护手霜 呵护女人的第二张脸 拥有一支适合的护手霜是如此重要",
+      "fTitle": "除了气候变化会导致手部肌肤衰老粗糙以外，日常生活中也若不用心去保护重视起来，同样",
+      "imgIcon": "../../assets/imgs/index/titleD.png",
+      "name": "yong",
+      "num": "4890",
+      "rImg": "../../assets/imgs/index/ping_protect1.jpg"
+    },
+    {
+      "title": "化妆水该怎么选 这里面还真的有学问 下面让我们来看看如何选化妆水才是最适合我们的",
+      "fTitle": "精华水、爽肤水、柔肤水......越来越多类型的化妆水，我们该如何抉择",
+      "imgIcon": "../../assets/imgs/index/titleD.png",
+      "name": "lily",
+      "num": "300",
+      "rImg": "../../assets/imgs/index/ping_00003.png"
+    }
+  ],
+  "message": "succ"
+}

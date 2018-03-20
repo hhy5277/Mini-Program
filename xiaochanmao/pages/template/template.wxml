@@ -1,0 +1,19 @@
+<template name="showItem">
+    <view class="box">
+       
+      <!-- <navigator url="../detail/detail?id={{item.id}}" hover-class="navigator-hover">  </navigator> -->
+       <view class="box-left">
+          <image  mode="scaleToFill" src="{{item.imgPic}}" class="imgPic"/>
+        </view>
+        <view class="box-right"> 
+          <view class="box-top">
+            <view class="box-content inaline">{{item.title}}</view>
+          </view> 
+          <view class="box-bottom">
+           <text class="box-content inaline box-bottom-price">{{item.price}}</text>
+            <text class="box-bottom-count">看相似</text>
+          </view>
+        </view>
+    
+    </view>
+</template>

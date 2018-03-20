@@ -1,0 +1,63 @@
+/**app.wxss**/
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+.box{
+  height: 300rpx;
+}
+.precentF{
+  width:50%;
+  display: inline-block;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  box-sizing: border-box;
+  padding-top: 20rpx;
+}
+.box-left{
+  height:150rpx;
+  width:150rpx;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.box-left .imgPic{
+  height:150rpx;
+  width:150rpx;
+  padding-left:50%;
+}
+.box-top{
+  /* display: flex;
+  flex-direction: row; */
+  flex-wrap: nowrap;
+}
+.box-content{
+  width: 100%;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+}
+.box-bottom{
+  width: 100%;
+  padding-top: 4px;
+}
+.box-bottom-count{
+  color:#000;
+  font-size: 14px;
+   border:1px solid #000;
+   margin-left:114rpx;
+}
+.box-bottom-price{
+  color:red;
+  font-size: 14px;
+}
+
+.inaline{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+

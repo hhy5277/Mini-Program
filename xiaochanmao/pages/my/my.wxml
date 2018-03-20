@@ -1,0 +1,75 @@
+<!--my-->
+<view class="title"> 
+  <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_back.png" class="imgPic"></image>
+
+  <view class="userContent">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+    <view wx:else class="getPic">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" class="picUser"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+</view>
+
+</view>
+
+<!--内容-->
+<view class="iconContent">
+     <view class="show">
+     <view class="row">
+       <view class="showIcon">
+               <image src="../../assets/imgs/index/pay.png"></image>
+         </view>
+          <view class="showIcon showIcon2">
+               <image src="../../assets/imgs/index/wrap.png"></image>
+         </view>
+          <view class="showIcon showIcon3">
+               <image src="../../assets/imgs/index/detail.png"></image>
+         </view>
+          <view class="showIcon showIcon4">
+               <image src="../../assets/imgs/index/phone.png"></image>
+         </view>
+          <view class="showIcon showIcon5">
+               <image src="../../assets/imgs/index/order.png"></image>
+         </view>
+     </view>
+       
+    
+     <view class="row row2">
+          <view class="showIcon showIcon6">
+               <image src="../../assets/imgs/index/love.png"></image>
+         </view>
+          <view class="showIcon showIcon7">
+               <image src="../../assets/imgs/index/shop.png"></image>
+         </view>
+          <view class="showIcon showIcon8">
+               <image src="../../assets/imgs/index/record.png"></image>
+         </view>
+          <view class="showIcon showIcon9">
+               <image src="../../assets/imgs/index/user.png"></image>
+         </view>
+          <view class="showIcon showIcon10">
+               <image src="../../assets/imgs/index/clock.png"></image>
+         </view>
+     </view>
+
+     <view class="row row3">
+           <view class="showIcon showIcon11">
+               <text>0</text>
+         </view>
+          <view class="showIcon showIcon12">
+               <text>0</text>
+         </view>
+          <view class="showIcon showIcon13">
+              <text>0</text>
+         </view>
+          <view class="showIcon showIcon14">
+              <text>0</text>
+         </view>
+          <view class="showIcon showIcon15">
+               <image src="../../assets/imgs/index/wallet.png"></image>
+         </view>
+     </view>
+      </view>
+</view>

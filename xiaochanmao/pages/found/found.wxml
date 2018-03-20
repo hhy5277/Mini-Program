@@ -1,0 +1,89 @@
+<!--pages/found/index.wxml-->
+
+<!--标题-->
+<view class="found_top">
+   <view class="title">
+       <image src="../../assets/imgs/index/ping_disc.png" class="imgPic"></image>
+   </view>
+</view>
+
+<!--导航-->
+<view class="btnTop">
+     <view class="listPic">
+      <image src="../../assets/imgs/index/ping_new1.png" class="picIcon" mode="widthFix"></image>
+     </view>
+       <view class="listPic listPic2">
+      <image src="../../assets/imgs/index/ping_new2.png" class="picIcon" mode="widthFix"></image>
+     </view>
+       <view class="listPic listPic3">
+      <image src="../../assets/imgs/index/ping_new3.png" class="picIcon" mode="widthFix"></image>
+     </view>
+       <view class="listPic listPic4">
+      <image src="../../assets/imgs/index/ping_new5.png" class="picIcon" mode="widthFix"></image>
+     </view>
+</view>
+
+<!--tab分类-->
+<view class="found_content">
+    <view class="btnTab">
+       <view class="row">
+          <view class='btnText'><text>馋猫号</text></view>
+          <view class='btnText'><text>型男志</text></view>
+          <view class='btnText'><text>爱搞机</text></view>
+          <view class='btnText'><text>生活家</text></view>
+           <view class="btnText iconT">
+           <image src="{{imgPic}}" bindtap='tabBtn'></image>
+           </view>
+       </view>
+       <view class="btnHid" wx:if="{{btnHid}}">
+          <view class="row row2">
+            <view class='btnText'><text>女神范</text></view>
+            <view class='btnText'><text>亲子园</text></view>
+            <view class='btnText'><text>数码控</text></view>
+            <view class='btnText'><text>文艺咖</text></view>
+          </view>
+           <view class="row row3">
+            <view class='btnText'><text>理财师</text></view>
+            <view class='btnText'><text>吃货党</text></view>
+            <view class='btnText'><text>品牌街</text></view>
+            <view class='btnText'><text>家居馆</text></view>
+          </view>
+       </view>
+     
+    </view>
+
+    <view class="articleNum">
+         <view class="articleList" wx:for="{{articleList}}">
+      <view class="lef">
+      <view class="row">
+      <text class="title">{{item.title}}</text>
+      </view>
+
+       <view class="row2">
+      <text class="fTitle">{{item.fTitle}}</text>
+      </view>
+
+     <view class="row3">
+      <image src="{{item.imgIcon}}" class="imgIcon"></image>
+      <text class="picText">{{item.name}}</text>
+      </view>
+
+      <view class="row4">
+      <text class="readNum">阅读量：{{item.num}}</text>
+      </view>
+    
+      </view>
+      <view class="right">
+       <image src="{{item.rImg}}" class="imgPic" mode="widthFix"></image>
+      </view>
+    </view>
+    
+    </view>
+   
+    <view class="more">
+                     <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_logo2.ico" class="iconMore"></image>
+                     <text>没有更多了</text>
+                  </view>
+
+
+</view>

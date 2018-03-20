@@ -1,0 +1,128 @@
+/* pages/found/index.wxss */
+
+/*标题*/
+.found_top .title{
+    width:100%;
+    background-color:#ddd;
+    text-align: center;
+    padding-bottom: 10rpx;
+    padding-top: 10rpx;
+}
+.found_top .title .imgPic{
+     width:117rpx;
+     height:50rpx;
+}
+
+/*导航*/
+.btnTop{
+  display: flex;
+  display: -webkit-flex;
+  padding-top: 20rpx;
+}
+.btnTop .listPic{
+  width:25%;
+  text-align: center;
+}
+.btnTop .listPic::after{
+  content:'优选清单';
+  display:block;
+  clear: both;
+  font-size: 22rpx;
+}
+.btnTop .listPic2::after{
+  content:'品牌头条';
+}
+.btnTop .listPic3::after{
+  content:'选礼神器';
+}
+.btnTop .listPic4::after{
+  content:'好东西';
+}
+ .btnTop .listPic .picIcon{
+  width:40rpx;
+  /* height:53rpx; */
+} 
+
+/*tab分类*/
+.found_content .btnTab{
+     width:100%;
+    background-color:#ddd;
+    text-align: center;
+    margin-top: 20rpx;
+    padding-bottom: 20rpx;
+}
+.found_content .btnTab .row{
+  display: flex;
+  display: -webkit-flex;
+  font-size: 24rpx;
+  padding-top: 10rpx;
+}
+.found_content .btnTab .row .btnText{
+     width:20%;
+     text-align: center;
+}
+.found_content .btnTab .row .iconT image{
+      width:26rpx;
+      height:16rpx;
+      padding-top: 20rpx;
+}
+
+/*文章*/
+.articleList{
+  display: flex;
+  display: -webkit-flex;
+}
+.articleList .lef{
+  flex: 3;
+  -webkit-flex:3;
+   margin: 20rpx;
+}
+.articleList .right{
+  flex: 1;
+  -webkit-flex:1;
+  justify-content: space-around;
+  margin-top: 40rpx;
+  text-align: center;
+}
+.articleList .lef .row3{
+  padding-left: 60rpx;
+}
+.articleList .lef .row3 .imgIcon{
+    width:24rpx;
+    height:24rpx;
+    display: inline-block;
+    vertical-align:middle;
+}
+.articleList .lef .row4 .readNum{
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.articleList .lef .row3 .picText{
+   font-size: 24rpx;
+}
+.articleList .right .imgPic{
+    width:108rpx;
+    /* height:150rpx; */
+}
+.articleList .lef .row .title{
+  font-size:30rpx;
+  color: red;
+  font-weight: bold;
+}
+.articleList .lef .row2 .fTitle{
+  font-size:26rpx;
+}
+
+/*没有更多了*/
+.more{
+  text-align: center;
+  padding-top: 30rpx;
+}
+.more .iconMore{
+     width:32rpx;
+     height:32rpx;
+}
+.more text{
+  font-size: 24rpx;
+  padding-left: 10rpx;
+}

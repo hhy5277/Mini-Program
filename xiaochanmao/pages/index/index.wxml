@@ -1,0 +1,295 @@
+<!--index.wxml-->
+<view class="container">
+      <!--轮播图  -->
+     <view class="picLun">
+       <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+    </view> 
+
+    <!--导航图标  -->
+         <view class="picBtn">
+              <view wx:for="{{picBtn}}" class="picGroup">
+                    <image src="{{item.picImg}}" class="picImg"></image>
+                    <text class="picText">{{item.text}}</text>
+              </view>
+         </view>
+
+         <view class="picBtn">
+            <view wx:for="{{picBtn2}}" class="picGroup">
+                    <image src="{{item.picImg}}" class="picImg"></image>
+                    <text class="picText">{{item.text}}</text>
+              </view>
+         </view>
+
+         <!--快报-->
+         <view class="newpapers">
+             <view class="content">
+                 <view class="top flx">
+                      <text>小馋猫</text>
+                      <text class="Rcor">快报</text>
+                      <text class="mh">:</text>
+                 </view>
+        <view class="center flx">
+          <swiper indicator-dots="{{indicatorDots2}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" vertical="{{vertical}}" circular="{{circular}}" class="vert">
+            <block wx:for="{{TextUrls}}">
+                <swiper-item>
+                   <text class="listText">{{item}}</text>
+                </swiper-item>
+            </block>
+          </swiper>
+                 </view>
+                 <view class="bottom flx">
+                     <text>更多</text>
+                 </view>
+             </view>
+         </view>
+
+         <!--秒杀-->
+         <view class="timeLast">
+             <view class="title">
+                <text>小馋猫秒杀</text>
+                <text class="more" bindtap='more'>更多</text>
+             </view>
+              <!--商品-->
+            <view class="top">
+                <!-- <scroll-view class="scroll-view_H" scroll-x="true"></scroll-view>-->
+                
+                <!-- <swiper class="sProduct" indicator-dots="{{indicatorDots2}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+                
+               <view class="productPic" wx:for="{{productPic}}" wx:for-item="item">
+                     <swiper-item>
+                  <image src="{{item.imgPic}}" class="pic"></image>
+                  <text class="text">{{item.price}}</text>
+                 </swiper-item>
+               </view>
+                  
+                 </swiper> -->           
+              
+               <view class="productPic" wx:for="{{productPic}}" wx:for-item="item">
+                  <image src="{{item.imgPic}}" class="pic"></image>
+                  <text class="text">{{item.price}}</text>
+               </view>
+            </view>
+         </view>
+
+         <!--展示-->
+
+         <view class="product">
+            <view class="title">
+               <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_navbar2.jpg" class="imgPic"></image>
+            </view>
+         <view class="row">
+             <view class="icon">
+             <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_001.png" class="iconImg"></image>
+             </view>
+               <view class="icon">
+             <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_002.png" class="iconImg"></image>
+             </view>
+               <view class="icon">
+             <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_003.png" class="iconImg"></image>
+             </view>
+             <view class="icon">
+                <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_004.png" class="iconImg"></image>
+             </view>
+              <view class="icon">
+                <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_005.png" class="iconImg"></image>
+             </view>
+              <view class="icon">
+                <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_006.png" class="iconImg"></image>
+             </view>
+              <view class="icon">
+                <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_007.png" class="iconImg"></image>
+             </view>
+              <view class="icon">
+                <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_008.png" class="iconImg"></image>
+             </view>
+         </view>
+
+          </view>
+
+          <!--展示2  -->
+            <view class="product2">
+            <!--oneRow-->
+                 <view class="row">
+                     <view class="show">
+                         <view  class="show_row">
+                               <text class="show_text">发现好货</text>
+                         </view>
+                          <view  class="show_row2">
+                              <text class="pin">优品</text>
+                              <text class="pin life">优生活</text>
+                         </view>
+                          <view  class="show_row3">
+                               <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_5goods.png" class="show_icon"></image>
+                         </view>
+                     </view>
+
+                  <view class="show2">
+                         <view  class="show2_row">
+                               <text>优品专辑</text>
+                         </view>
+                         <view  class="show2_row2">
+                               <text>新年换新</text>
+                         </view>
+                         <view  class="show2_row3">
+                              <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_1goods.png" class="show2_icon"></image>
+                         </view>
+                   </view>
+
+                   <view class="show2 show3">
+                         <view  class="show2_row show3_row">
+                               <text>品牌头条</text>
+                         </view>
+                         <view  class="show2_row2 show3_row2">
+                               <text>大牌驾到</text>
+                         </view>
+                         <view  class="show2_row3">
+                              <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_4goods.png" class="show2_icon"></image>
+                         </view>
+                   </view>
+
+                 </view>
+                   <!--secondRow  -->
+                  <view class="row row2">
+                    
+                       <view class="show">
+                         <view  class="show_row">
+                               <text class="show_text">排行榜</text>
+                         </view>
+                          <view  class="show_row2">
+                              <text class="pin">TOP年度疯狂购</text>
+                         </view>
+                          <view  class="show_row3">
+                               <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_2goods.png" class="show_icon"></image>
+                         </view>
+                     </view>
+
+
+                        <view class="show2 show3">
+                         <view  class="show2_row show3_cor show3_fot">
+                               <text class="text">闪购</text>
+                         </view>
+                         <view  class="show2_row2 show3_cor show3_fot2">
+                               <text class="text2">双立人厨具</text>
+                         </view>
+                         <view  class="show2_row3">
+                              <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_3goods.png" class="show2_icon"></image>
+                         </view>
+                   </view>
+
+                  </view>
+
+            </view>
+
+            <!--展示3-->
+            <view class="product3">
+                <view class="title">
+                    <text class="enjoy">爱</text>
+                    <text class="zhi">生活</text>
+                </view>
+
+                <view class="row">
+                    <view class="show">
+                       <view class="show_row">
+                        <text>玩3C</text>
+                    </view>  
+                     <view class="show_row2">
+                         <text>乐S3新机放量抢</text>
+                    </view>  
+                     <view class="show_row3">
+                        <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_1life.png" class="show_icon"></image>
+                    </view>  
+                    </view>
+                 
+                  <view class="show show2">
+                     <view class="show_row show2_row">
+                        <text class="play">馋猫家电</text>
+                    </view>  
+                     <view class="show_row2">
+                         <text class="totel">领劵减666元</text>
+                    </view>  
+                     <view class="show_row3">
+                        <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_2life.png" class="show_icon2"></image>
+                    </view>  
+                    </view>
+                </view>
+
+                 <view class="row row2">
+                        <view class="show">
+                       <view class="show_row">
+                        <text>馋猫超市</text>
+                    </view>  
+                     <view class="show_row2">
+                         <text>满199减100</text>
+                    </view>  
+                     <view class="show_row3">
+                        <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_3life.png" class="show_icon"></image>
+                    </view>  
+                    </view>
+
+                      <view class="show show2">
+                     <view class="show_row show2_row">
+                        <text class="play">爱家</text>
+                    </view>  
+                     <view class="show_row2">
+                         <text class="totel">厨具满199减80</text>
+                    </view>  
+                     <view class="show_row3">
+                        <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_4life.png" class="show_icon2"></image>
+                    </view>  
+                    </view>
+                </view>
+
+            </view>
+
+            <!--展示3 轮播-->
+      <view class="picLun picLun2">
+          <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" 
+                  interval="{{interval}}" duration="{{duration}}" class="swHeight">
+              <block wx:for="{{productIcon}}">
+                  <swiper-item>
+                      <image src="{{item}}" class="slide-image product3_image" />
+                  </swiper-item>
+             </block>
+          </swiper>
+      </view>
+
+      <!--为你推荐-->
+        <view class="product4">
+                <view class="title">
+                    <text class="enjoy">为你</text>
+                    <text class="zhi">推荐</text>
+                </view>
+
+             <view class="content">
+
+                  <view class="row" wx:for="{{product4}}">
+                      <view class="top">
+                          <image src="{{item.imgPic}}"></image>
+                      </view>
+                      <view class="center">
+                           <text>{{item.text}}</text>
+                      </view>
+                      <view class="bottom">
+                          <text class="price">{{item.price}}</text>
+                          <text class="similar">看相似</text>
+                      </view>
+                  </view>
+                   
+                  <view class="more">
+                     <image src="http://7xspa8.com1.z0.glb.clouddn.com/ping_logo2.ico" class="iconMore"></image>
+                     <text>没有更多了</text>
+                  </view>
+
+             </view>
+              
+        </view>
+
+
+</view>

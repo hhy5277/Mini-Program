@@ -1,0 +1,143 @@
+/* pages/my/index.wxss */
+.title .imgPic{
+  width:100%;
+  height:200rpx;
+}
+.title{
+  position: relative;
+}
+.title .userContent{
+  position: absolute;
+  top:60rpx;
+  left:60rpx;
+  width:140rpx;
+  height:60rpx;
+}
+.title .userContent button{
+     background-color:inherit;
+     color: #fff;
+     font-size: 36rpx;
+     font-weight: bold;
+}
+.title .userContent .picUser{
+      width:100rpx;
+      height:100rpx;
+}
+.title .userContent .getPic{
+  width:500rpx;
+}
+.title .userContent .userinfo-nickname{
+  padding-left: 16rpx;
+}
+
+/*内容*/
+.iconContent .show .row .showIcon{
+  width:20%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 30rpx;
+}
+.iconContent .show .row .showIcon::after{
+  content:'付款';
+  height:0;
+  display: block;
+   clear: both; 
+   font-size:24rpx;
+}
+.iconContent .show .row .showIcon2::after{
+  content:'收货';
+}
+.iconContent .show .row .showIcon3::after{
+  content:'评价';
+}
+.iconContent .show .row .showIcon4::after{
+  content:'售后';
+}
+.iconContent .show .row .showIcon5::after{
+  content:'订单';
+}
+.iconContent .show .row .showIcon6::after{
+  content:'商品关注';
+}
+.iconContent .show .row .showIcon7::after{
+  content:'店铺关注';
+}
+.iconContent .show .row .showIcon8::after{
+  content:'浏览记录';
+}
+.iconContent .show .row .showIcon9::after{
+  content:'客户服务';
+}
+.iconContent .show .row .showIcon10::after{
+  content:'我的活动';
+}
+.iconContent .show .row .showIcon11::after{
+  content:'馋豆';
+}
+.iconContent .show .row .showIcon12::after{
+  content:'卡劵';
+}
+.iconContent .show .row .showIcon13::after{
+  content:'白条';
+}
+.iconContent .show .row .showIcon14::after{
+  content:'E卡';
+}
+.iconContent .show .row .showIcon15::after{
+  content:'钱包';
+}
+.iconContent .show .row .showIcon image{
+  width:34px;
+  height:23px;
+}
+.iconContent .show .row .showIcon2 image{
+  width:30px;
+  height:31px;
+}
+.iconContent .show .row .showIcon3 image{
+  width:32px;
+  height:32px;
+}
+.iconContent .show .row .showIcon4 image{
+  width:33px;
+  height:32px;
+}
+.iconContent .show .row .showIcon5 image{
+  width:32px;
+  height:32px;
+}
+.iconContent .show .row .showIcon6 image{
+  width:32px;
+  height:32px;
+}
+.iconContent .show .row .showIcon7 image{
+  width:32px;
+  height:32px;
+}
+.iconContent .show .row .showIcon8 image{
+  width:32px;
+  height:32px;
+}
+.iconContent .show .row .showIcon9 image{
+  width:21px;
+  height:31px;
+}
+.iconContent .show .row .showIcon10 image{
+  width:32px;
+  height:32px;
+}
+.iconContent .show .row .showIcon15 image{
+  width:45px;
+  height:31px;
+}
+.iconContent .show .row{
+  width:100%;
+  background-color: #e8e8e8;
+  height:140rpx;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.iconContent .show .row2{
+  background-color: inherit;
+   margin-top: 0;
+}

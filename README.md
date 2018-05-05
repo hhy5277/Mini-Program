@@ -1,5 +1,13 @@
 ----小程序--仿京东购物网站
 
+效果图
+
+![Image text](https://github.com/lilyping/----/blob/master/xiaochanmao/assets/1.png)
+
+![Image text](https://github.com/lilyping/----/blob/master/xiaochanmao/assets/2.png)
+
+![Image text](https://github.com/lilyping/----/blob/master/xiaochanmao/assets/3.png)
+
 1）使用原生小程序开发语言，开发仿京东购物网站
 
 2)利用七牛云存储存放图片，和虚拟 json 文件，可以使本地内存更小，原因是小程
